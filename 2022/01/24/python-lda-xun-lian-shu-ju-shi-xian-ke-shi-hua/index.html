@@ -32,9 +32,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -416,10 +416,13 @@
             <div id="articleContent">
                 <h1 id="python-LDA训练数据实现可视化"><a href="#python-LDA训练数据实现可视化" class="headerlink" title="python-LDA训练数据实现可视化"></a>python-LDA训练数据实现可视化</h1><h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><ul>
 <li>实验环境：<br>python3.7<br>PyCharm Community Edition 2019.3.3 x64  </li>
-<li>实验数据：<br>上面给出的 舆情语料.zip可自行下载（也可使用自己的数据）<br>以及分词所需的停用词 stopwords.txt  <h2 id="二、整合数据"><a href="#二、整合数据" class="headerlink" title="二、整合数据"></a>二、整合数据</h2>下载好语料后会发现有两个文件夹，train是训练数据 test是测试数据<br><img src="https://cdn.jsdelivr.net/gh/hren0315/imgbed/imgbed/post202201262043057.png"><br>每个文件夹中都有八个主题的小文件夹  <div align="left">
-<img src="https://cdn.jsdelivr.net/gh/hren0315/imgbed/imgbed/post202201262043060.png" width="60%" height="50%">
-</div></li>
+<li>实验数据：<br>上面给出的 舆情语料.zip可自行下载（也可使用自己的数据）<br>以及分词所需的停用词 stopwords.txt  <h2 id="二、整合数据"><a href="#二、整合数据" class="headerlink" title="二、整合数据"></a>二、整合数据</h2>下载好语料后会发现有两个文件夹，train是训练数据 test是测试数据  <img src="https://cdn.jsdelivr.net/gh/hren0315/imgbed/imgbed/post202201262043057.png">  
+每个文件夹中都有八个主题的小文件夹  </li>
 </ul>
+<div align="left">
+<img src="https://cdn.jsdelivr.net/gh/hren0315/imgbed/imgbed/post202201262043060.png" width="60%" height="50%">
+</div>
+
 <p>每个小文件夹中又有许多.txt文本，其中训练文件中有40个，测试文件中有10个  </p>
 <div align="left">
 <img src="https://cdn.jsdelivr.net/gh/hren0315/imgbed/imgbed/post202201262043061.png" width="60%" height="50%">
@@ -633,7 +636,7 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/haoren1.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
                         <img src="/medias/reward/haoren.jpg" class="reward-img" alt="微信打赏二维码">
@@ -938,60 +941,6 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -1285,8 +1234,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
